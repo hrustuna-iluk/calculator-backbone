@@ -12,3 +12,12 @@
     font-size: 20pt;
     color: darkred;
 }
+.newItem{
+    border: 2px solid darkred;
+    width: 300px;
+    font-size: 16pt;
+    text-align: center;
+    margin-left: 520px;
+    margin-top: 5px;
+
+}

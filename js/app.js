@@ -8,14 +8,11 @@
             });
             collection.add(model);
         });
-*/      var collection = new CalcCollection();
+*/
 
         new CalcView({
             model: new CalcModel,
-            collection:collection
         }).render();
 
-       new CalcCollectionView({
-           collection:collection
-       }).render();
+
 

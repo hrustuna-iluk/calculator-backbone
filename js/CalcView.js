@@ -2,17 +2,15 @@ var CalcView = Backbone.View.extend({
     //el: ".calculationField",
     template: _.template($('#calculationField').html()),
     content: $("#main"),
+    historyContent:$('#footer'),
     className: 'templateHolder',
-
-    initialize:function(options){
-        this.collection = options.collection;
-    },
 
     /*protected methods*/
 
     _attachEvents: function(){
         this.$el.on('keypress', $.proxy(this._operationKeyValue,this))
     },
+
 
     _operationKeyValue: function(e){
         switch(e.keyCode){
@@ -73,7 +71,8 @@ var CalcView = Backbone.View.extend({
     },
     _newHistoryItem: function(){
          var historyItem = new CalcModel(this.model.toJSON());
-         this.collection.add(historyItem);
+         this.historyContent.append(new historyItemView({model:historyItem}).render().el);
+
     },
     /*public methods*/
 
