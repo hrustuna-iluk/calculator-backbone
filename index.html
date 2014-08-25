@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Backbone Calculator</title>
+    <link href="bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/calculatorStyle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1 class="text-capitalize text-danger">Backbone Calculator</h1>
+    </div>
+
+    <div id="main">
+    </div>
+
+    <div id="footer">
+        <ul class="historyList"></ul>
+    </div>
+
+
+    <script type="text/template" id="calculationField">
+        <input type="text" class="calculationField input-lg" value =  "" />
+    </script>
+
+    <script type="text/template" id="calculationHistory">
+        <span class="firstOperand"> <%= firstOperand %> </span>
+        <span class="operation"> <%= operation %> </span>
+        <span class="secondOperand"> <%= secondOperand %> </span>
+        <span> = </span>
+        <span class="result"> <%= result %> </span>
+        <a href="#" class="delete">[delete]</a>
+    </script>
+
+    <script type="text/javascript" src="js/frameworks/jquery.js"></script>
+    <script type="text/javascript" src="js/frameworks/underscore.js"></script>
+    <script type="text/javascript" src="js/frameworks/backbone.js"></script>
+    <script type="text/javascript" src="js/CalcModel.js"></script>
+    <script type="text/javascript" src="js/CalcView.js"></script>
+    <script type="text/javascript" src="js/CalcCollection.js"></script>
+    <script type="text/javascript" src="js/CalcCollectionView.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

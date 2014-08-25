@@ -1,0 +1,14 @@
+#header{
+    width: 600;
+    margin-left: 360px;
+    text-align: center;
+}
+.templateHolder{
+    text-align: center;
+
+}
+.calculationField{
+    width: 500px;
+    font-size: 20pt;
+    color: darkred;
+}
